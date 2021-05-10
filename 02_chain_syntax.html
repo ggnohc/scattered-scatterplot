@@ -6,10 +6,15 @@
 		<script type="text/javascript" src="d3.js"></script>
 	</head>
 	<body>
-		<script type="text/javascript">
 
-			d3.select("body").append("p").text("New paragraph!");
-			
+		<!---  no paragraph here yet ! -->
+
+
+
+		<script type="text/javascript">
+			var body = d3.select("body");
+			body.append("p").text("New paragraph!");
+			body.append("h1").text("It worked, again!");
 		</script>
 	</body>
 </html>
