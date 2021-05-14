@@ -86,13 +86,18 @@
 			   .data(dataset)
 			   .enter()
 			   .append("circle")
+
 			   .attr("cx", function(d) {
 					return d.x;
 			   })
-			   .attr("cy", h)
-			   .attr("r", 1)
+			   //default values
+			   .attr("cy", h)  //set to the botoom at the beginning
+			   .attr("r", 1)   //set to small circule at the beginning
+
 			   .transition()
-			   .duration(2000)
+			   .duration(2000)  //in miliseconds
+
+			   //target values
 			   .attr("cy", function(d) {
 				   return d.y;
 			   })
