@@ -24,6 +24,13 @@
 			.axis text {
 				font-family: sans-serif;
 				font-size: 11px;
+				fill: red   //use fill instead of 'color' for SVG
+			}
+
+			// if want to have different stle for x-axis only
+			.axis.x text {
+				font-weight: bold;
+				fill: red
 			}
 
 		</style>
@@ -74,7 +81,7 @@
 						.attr("height", h);
 
 			//Create circles
-			svg.append("g")
+			svg.append("g")  //grouping objects
 			   .attr("id", "circles")
 			   .selectAll("circle")
 			   .data(dataset)
