@@ -131,7 +131,7 @@
 
 					//Update all circles
 					svg.selectAll("circle")
-					   .data(dataset)
+					   .data(dataset) //no need SelectAll, enter, append since we are just replacing data
 					   .transition()
 					   .duration(1000)
 					   .attr("cx", function(d) {
